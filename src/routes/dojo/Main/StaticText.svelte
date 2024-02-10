@@ -9,7 +9,7 @@
 
 		color: #210056;
 		font-family: Montserrat;
-		font-size: 48px;
+		font-size: var(--font-size-48);
 		font-weight: 400;
 		letter-spacing: -0.48px;
 	}

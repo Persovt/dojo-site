@@ -8,6 +8,16 @@
 	font-family: var(--font-body);
 	--font-family-montserrat: Montserrat;
 	color: var(--color-text);
+
+	--font-size-128: min(12vh, 128px);
+	--font-size-96: min(8.8vh, 96px);
+	--font-size-48: min(4.4vh, 48px);
+	--font-size-40: min(3.7vh, 40px);
+	--font-size-24: min(2.2vh, 24px);
+	--font-size-20: min(1.9vh, 20px);
+
+	--bg-width: min(164vh, 1774px);
+	--header-width: min(31vh, 338px);
 }
 
 body {

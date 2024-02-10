@@ -5,7 +5,7 @@
 </script>
 
 <div class="root">
-	<div class="bg" />
+	<div class="bg2" />
 	<div class="text">
 		<ChangingText />
 		<StaticText />
@@ -27,13 +27,25 @@
 
 	.bg {
 		width: 1774px;
-		height: 1774px;
+		height: 133%;
 		position: absolute;
 		z-index: -1;
 		left: -58%;
 
-		border-radius: 1774px;
+		border-radius: 100%;
 		background: linear-gradient(90deg, #fff 60.26%, #9747ff 99.9%);
+	}
+
+	.bg2 {
+        z-index: -1;
+		background-image: url('./assets/bg.svg');
+		width: var(--bg-width);
+		position: absolute;
+        background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 100vh;
+		left: -564px;
 	}
 
 	.text {

@@ -21,7 +21,7 @@
         text-align: center;
 		text-transform: uppercase;
 
-        font-size: 40px;
+        font-size: var(--font-size-40);
 		font-style: normal;
 	}
 

@@ -11,7 +11,7 @@
 
 <style>
     header {
-        width: 338px;
+        width: var(--header-width);
         height: 100vh;
 
         display: flex;

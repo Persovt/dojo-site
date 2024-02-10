@@ -22,7 +22,10 @@
 		style:top={`${rectanglePositions[currenWord]}%`}
 		style:transform={`translateY(-${rectanglePositions[currenWord]}%)`}
 	/>
-
+	<!-- херня чтобы анимационная херня не скакала при динамическом шрифте -->
+	<div class="text invisible-text">
+		with bespoke <br> strategies
+	</div>
 	{#each texts[currenWord]?.split(' ') as word, i}
 		<span class={i === COLORED_INDEX ? 'colored' : ''}>
 			{word}
@@ -42,15 +45,19 @@
 <style>
 	.text {
 		height: 218px;
-		width: 950px;
 
 		position: relative;
 		color: #210056;
 		font-family: var(--font-family-montserrat);
-		font-size: 128px;
+		font-size: var(--font-size-128);
 		font-style: normal;
 		font-weight: 800;
 		line-height: 90.206%; /* 115.464px */
+	}
+
+	.invisible-text {
+		opacity: 0;
+		height: 1px;
 	}
 
 	.colored {

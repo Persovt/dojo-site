@@ -41,7 +41,7 @@
 	.we {
 		text-transform: uppercase;
 		color: #210056;
-		font-size: 96px;
+		font-size: var(--font-size-96);
 		line-height: 90.206%; /* 86.598px */
 		letter-spacing: -10.56px;
 	}
@@ -49,7 +49,7 @@
 	.verbs {
 		color: #fff;
 		text-align: center;
-		font-size: 20px;
+		font-size: var(--font-size-20);
 		line-height: 131%; /* 26.2px */
 		letter-spacing: -1px;
 
@@ -63,7 +63,7 @@
 		color: #210056;
 		text-align: center;
 		font-family: Montserrat;
-		font-size: 24px;
+		font-size: var(--font-size-24);
 		font-style: italic;
 		font-weight: 800;
 		line-height: normal;
@@ -86,7 +86,7 @@
 
 		color: #210056;
 		font-family: Inter;
-		font-size: 20px;
+		font-size: var(--font-size-20);
 		font-style: normal;
 		font-weight: 800;
 		line-height: normal;
