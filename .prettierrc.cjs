@@ -1,4 +1,4 @@
-{
+const config = {
 	"useTabs": true,
 	"singleQuote": true,
 	"trailingComma": "none",
@@ -7,3 +7,5 @@
 	"pluginSearchDirs": ["."],
 	"overrides": [{ "files": "*.svelte", "options": { "parser": "svelte" } }]
 }
+
+module.exports = config;

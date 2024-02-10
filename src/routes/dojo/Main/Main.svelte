@@ -1,0 +1,49 @@
+<script>
+	import ChangingText from './ChangingText.svelte';
+	import StaticText from './StaticText.svelte';
+	import Discover from './Discover/Discover.svelte';
+</script>
+
+<div class="root">
+	<div class="bg" />
+	<div class="text">
+		<ChangingText />
+		<StaticText />
+		<div class="discover">
+			<Discover />
+		</div>
+	</div>
+</div>
+
+<style>
+	.root {
+		position: relative;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+
+		margin-left: 250px;
+	}
+
+	.bg {
+		width: 1774px;
+		height: 1774px;
+		position: absolute;
+		z-index: -1;
+		left: -58%;
+
+		border-radius: 1774px;
+		background: linear-gradient(90deg, #fff 60.26%, #9747ff 99.9%);
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		gap: 23px;
+	}
+
+	.discover {
+		display: flex;
+		justify-content: end;
+	}
+</style>
