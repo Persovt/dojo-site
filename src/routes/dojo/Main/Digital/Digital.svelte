@@ -19,17 +19,17 @@
 	}
 
 	.bg {
-		--line-step: 2px;
+		/* --line-step: 2px;
 		--line-color: #9c51ff;
-		--line: var(--line-color) calc(var(--line-step) + 3px);
+		--line: var(--line-color) calc(var(--line-step) + 3px); */
 
 		width: 100%;
 		height: 100%;
 
 		position: absolute;
 		z-index: -2;
-		background: url('./assets/Screenshot-2024-02-11-at-19.37.52.svg');
-		background-size: 60px;
+		background: url('./assets/1.webp');
+		background-size: 17px;
 		/* background: repeating-linear-gradient(90deg, transparent 0 var(--line-step), var(--line)),
 			repeating-linear-gradient(0deg, transparent 0 var(--line-step), var(--line)); */
 	}

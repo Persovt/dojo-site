@@ -3,6 +3,7 @@
 	import StaticText from './StaticText.svelte';
 	import Discover from './Discover/Discover.svelte';
 	import Digital from './Digital/Digital.svelte';
+    import About from './About/About.svelte';
 </script>
 
 <div class="root">
@@ -17,6 +18,7 @@
 		</div>
 	</div>
 	<Digital />
+    <About />
 </div>
 
 <style>
