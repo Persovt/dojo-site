@@ -1,5 +1,9 @@
 @import '@fontsource/fira-mono';
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 :root {
 	--font-body: Inter
 	--font-mono: 'Fira Mono', monospace;

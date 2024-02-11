@@ -2,17 +2,21 @@
 	import ChangingText from './ChangingText.svelte';
 	import StaticText from './StaticText.svelte';
 	import Discover from './Discover/Discover.svelte';
+	import Digital from './Digital/Digital.svelte';
 </script>
 
 <div class="root">
-	<div class="bg2" />
-	<div class="text">
-		<ChangingText />
-		<StaticText />
-		<div class="discover">
-			<Discover />
+	<div class='first'>
+		<div class="bg2" />
+		<div class="text">
+			<ChangingText />
+			<StaticText />
+			<div class="discover">
+				<Discover />
+			</div>
 		</div>
 	</div>
+	<Digital />
 </div>
 
 <style>
@@ -23,6 +27,12 @@
 		align-items: center;
 
 		margin-left: 250px;
+	}
+
+	.first {
+		position: relative;
+		display: flex;
+		align-items: center;
 	}
 
 	.bg {
@@ -37,12 +47,12 @@
 	}
 
 	.bg2 {
-        z-index: -1;
+		z-index: -1;
 		background-image: url('./assets/bg.svg');
 		width: var(--bg-width);
 		right: var(--bg-offset);
 		position: absolute;
-        background-position: center;
+		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		min-height: 100vh;
