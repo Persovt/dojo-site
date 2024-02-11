@@ -17,6 +17,7 @@
 	--font-size-20: min(1.9vh, 20px);
 
 	--bg-width: min(164vh, 1774px);
+	--bg-offset: min(23vh, -250px);
 	--header-width: min(31vh, 338px);
 }
 

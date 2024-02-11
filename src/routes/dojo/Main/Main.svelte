@@ -40,12 +40,12 @@
         z-index: -1;
 		background-image: url('./assets/bg.svg');
 		width: var(--bg-width);
+		right: var(--bg-offset);
 		position: absolute;
         background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		min-height: 100vh;
-		left: -564px;
 	}
 
 	.text {

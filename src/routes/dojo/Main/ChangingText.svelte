@@ -44,7 +44,8 @@
 
 <style>
 	.text {
-		height: 218px;
+		height: min(218px, 20.18vh);
+		text-wrap: nowrap;
 
 		position: relative;
 		color: #210056;
