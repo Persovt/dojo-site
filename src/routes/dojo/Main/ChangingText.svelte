@@ -1,4 +1,4 @@
-<script lang="ts">    
+<script lang="ts">
 	const COLORED_INDEX = 1;
 	let currenWord = 0;
 
@@ -13,7 +13,7 @@
 		}
 	}
 
-	setInterval(incWord, 3000)
+	setInterval(incWord, 3000);
 </script>
 
 <div class={`text ${$$props.class}`}>
@@ -24,7 +24,7 @@
 	/>
 	<!-- херня чтобы анимационная херня не скакала при динамическом шрифте -->
 	<div class="text invisible-text">
-		with bespoke <br> strategies
+		with bespoke <br /> strategies
 	</div>
 	{#each texts[currenWord]?.split(' ') as word, i}
 		<span class={i === COLORED_INDEX ? 'colored' : ''}>
@@ -45,7 +45,7 @@
 <style>
 	.text {
 		height: min(218px, 20.18vh);
-		text-wrap: nowrap;
+		white-space: nowrap;
 
 		position: relative;
 		color: #210056;
@@ -74,7 +74,7 @@
 		height: 66px;
 		background: #210056;
 
-        transition: all .3s linear;
+		transition: all 0.3s linear;
 	}
 
 	.rektangle-left {
