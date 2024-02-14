@@ -1,6 +1,5 @@
 <div class="root">
-	by leveraging the limitless possibilities of the
-	<span class="mark">digital landscape</span>
+	by leveraging the <br> limitless possibilities <br> of&nbsp;the&nbsp;<span class="mark">digital&nbsp;landscape</span>
 </div>
 
 <style>

@@ -16,7 +16,7 @@
 	setInterval(incWord, 3000);
 </script>
 
-<div class={`text ${$$props.class}`}>
+<div class="root">
 	<span
 		class="rektangle rektangle-left"
 		style:top={`${rectanglePositions[currenWord]}%`}
@@ -42,8 +42,8 @@
 	/>
 </div>
 
-<style>
-	.text {
+<style lang="scss">
+	.root {
 		height: min(218px, 20.18vh);
 		white-space: nowrap;
 
@@ -71,9 +71,11 @@
 	}
 
 	.rektangle {
+		--width: 35px;
+
 		position: absolute;
-		width: 35px;
-		height: 66px;
+		width: var(--width);
+		height: calc(var(--width) * 1.8);
 		background: #210056;
 
 		transition: all 0.3s linear;
@@ -86,5 +88,23 @@
 	.rektangle-right {
 		transform: translateY(50%);
 		right: -50px;
+	}
+
+	@media (max-width: $mobile-viewport) {
+		.root {
+			height: calc(var(--df) * (127 - 66) + 56px);;
+		}
+
+		.rektangle {
+			--width: calc(var(--df) * (26 - 16) + 16px);
+		}
+
+		.rektangle-left {
+			left: -36px;
+		}
+
+		.rektangle-right {
+			right: -36px;
+		}
 	}
 </style>

@@ -84,7 +84,6 @@
 
 	@media (max-width: $mobile-viewport) {
 		header {
-			--header-height: 138px;
 			width: 100vw;
 			height: var(--header-height);
 
@@ -94,7 +93,12 @@
 			flex-direction: row-reverse;
 			justify-content: space-between;
 
-			padding: 12px;
+			padding: 12px 24px;
+            margin-bottom: 48px;
+
+			// position: sticky;
+			// top: 0;
+			// left: 0;
 		}
 
 		.kostil {

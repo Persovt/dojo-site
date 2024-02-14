@@ -3,11 +3,11 @@
 	import StaticText from './StaticText.svelte';
 	import Discover from './Discover/Discover.svelte';
 	import Digital from './Digital/Digital.svelte';
-    import About from './About/About.svelte';
+	import About from './About/About.svelte';
 </script>
 
 <div class="root">
-	<div class='first'>
+	<div class="first">
 		<div class="bg2" />
 		<div class="text">
 			<ChangingText />
@@ -18,10 +18,10 @@
 		</div>
 	</div>
 	<Digital />
-    <About />
+	<About />
 </div>
 
-<style lang='scss'>
+<style lang="scss">
 	.root {
 		position: relative;
 		height: 100vh;
@@ -69,9 +69,13 @@
 		justify-content: end;
 	}
 
-    @media (max-width: $mobile-viewport) {
-        .root {
-            flex-direction: column;
-        }        
-    }
+	@media (max-width: $mobile-viewport) {
+		.root {
+			flex-direction: column;
+		}
+
+        .text {
+            padding: 0 10vw;
+        }
+	}
 </style>

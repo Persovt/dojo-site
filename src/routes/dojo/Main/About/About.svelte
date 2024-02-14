@@ -129,6 +129,8 @@
 			height: auto;
 
 			gap: var(--gap);
+
+            padding-bottom: 80px;
 		}
 
 		.rightBlock {
