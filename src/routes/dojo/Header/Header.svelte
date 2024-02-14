@@ -5,7 +5,7 @@
 </script>
 
 <header>
-    <div class='kostil'/>
+	<div class="kostil" />
 	<div class="text">
 		<div class="first">
 			{first}
@@ -14,7 +14,7 @@
 			{second}
 		</div>
 	</div>
-	<div>
+	<div class="logo">
 		<Logo />
 	</div>
 </header>
@@ -37,7 +37,6 @@
 		margin-right: 250px;
 	}
 
-
 	.text {
 		transform: rotate(180deg);
 		writing-mode: tb-rl;
@@ -54,6 +53,11 @@
 			transform: unset;
 			writing-mode: unset;
 		}
+	}
+
+	.logo {
+		width: 228px;
+		height: 143px;
 	}
 
 	.first {
@@ -78,9 +82,9 @@
 		-webkit-text-fill-color: transparent;
 	}
 
-    @media (max-width: $mobile-viewport) {
-            header {
-                --header-height: 138px;
+	@media (max-width: $mobile-viewport) {
+		header {
+			--header-height: 138px;
 			width: 100vw;
 			height: var(--header-height);
 
@@ -90,11 +94,20 @@
 			flex-direction: row-reverse;
 			justify-content: space-between;
 
-			padding: 97px 51px;
-            }
-
-            .kostil {
-                display: none;
-            }
+			padding: 12px;
 		}
+
+		.kostil {
+			display: none;
+		}
+
+		.text {
+			text-align: right;
+		}
+
+		.logo {
+			width: 139px;
+			height: 83px;
+		}
+	}
 </style>
