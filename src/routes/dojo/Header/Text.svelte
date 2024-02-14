@@ -12,17 +12,23 @@
 	</div>
 </div>
 
-<style>
+<style lang="scss">
 	.text {
-		transform: rotate(-90deg);
+		transform: rotate(180deg);
+		writing-mode: tb-rl;
 		width: fit-content;
 
-        text-wrap: nowrap;
-        text-align: center;
+		text-wrap: nowrap;
+		text-align: center;
 		text-transform: uppercase;
 
-        font-size: var(--font-size-40);
+		font-size: var(--font-size-40);
 		font-style: normal;
+
+		@media (max-width: $mobile-viewport) {
+			transform: unset;
+			writing-mode: unset;
+		}
 	}
 
 	.first {
@@ -32,7 +38,7 @@
 		letter-spacing: -0.4px;
 
 		background-clip: text;
-        -webkit-background-clip: text;
+		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
 
@@ -42,8 +48,8 @@
 		line-height: 104.167%;
 		letter-spacing: -0.4px;
 
-        background-clip: text;
-        -webkit-background-clip: text;
+		background-clip: text;
+		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
 </style>

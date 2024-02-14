@@ -1,8 +1,16 @@
+<script>
+	const words = ['create', 'inspire', 'impact'];
+</script>
+
 <div class="root">
 	<div class="bg" />
 	<div class="box">
 		<div class="text break-words">dogo digital space</div>
-		<div class="words">create inspire impact</div>
+		<div class='words'>
+			{#each words as word}
+				<span class="word">{word}</span>
+			{/each}
+		</div>
 	</div>
 </div>
 
@@ -29,31 +37,39 @@
 		position: absolute;
 		z-index: -2;
 		background: url('./assets/1.webp');
-		background-size: 17px;
+		background-size: 12px;
 		/* background: repeating-linear-gradient(90deg, transparent 0 var(--line-step), var(--line)),
 			repeating-linear-gradient(0deg, transparent 0 var(--line-step), var(--line)); */
 	}
 
 	.box {
 		display: flex;
-        flex-direction: column;
+		flex-direction: column;
 		width: fit-content;
 	}
 
-	.words {
+	/* .words {
+		display: flex;
+		justify-content: space-between;
+	} */
+
+	.word {
 		font-family: Inter;
 		font-size: var(--font-size-24);
 		font-weight: 900;
 		line-height: 104.167%; /* 25px */
 		letter-spacing: -0.24px;
-        text-transform: uppercase;
-
-        word-spacing: 18px;
+		text-transform: uppercase;
 
 		background: linear-gradient(90deg, #210056 0.02%, #9747ff 99.98%);
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+
+		&:not(:last-child) {
+		/* TODO: px */
+			margin-right: 18px;
+		}
 	}
 
 	.text {

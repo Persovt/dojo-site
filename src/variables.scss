@@ -1,0 +1,71 @@
+
+$mobile-viewport: 719px;
+$mv: $mobile-viewport;
+$mmv: 719px;
+$d: 381;
+
+
+/* $mobile-viewport: 1300px; */
+
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@function calcFluidFontSize($f-min, $f-max, $w-min, $w-max, $units: px) {
+  $f-min: strip-unit($f-min);
+  $f-max: strip-unit($f-max);
+  $w-min: strip-unit($w-min);
+  $w-max: strip-unit($w-max);
+
+  $k: ($f-max - $f-min)/($w-max - $w-min);
+  $b: $f-min - $k * $w-min;
+
+  $b: $b + $units;
+
+  @return calc( #{$k} * 100vw + #{$b} );
+}
+
+@mixin fluidFontSize($f-min, $f-max, $w-min, $w-max, $fallback: false) {
+  @if ($fallback) {
+    font-size: $fallback;
+  }
+  font-size: calcFluidFontSize($f-min, $f-max, $w-min, $w-max, px);
+
+}
+
+:root {
+	--font-body: Inter
+	--font-mono: 'Fira Mono', monospace;
+	--color-bg-0: #fff;
+
+	font-family: var(--font-body);
+	--font-family-montserrat: Montserrat;
+	color: var(--color-text);
+
+	--font-size-128: min(12vh, 128px);
+	--font-size-96: min(8.8vh, 96px);
+	--font-size-48: min(4.4vh, 48px);
+	--font-size-40: min(3.7vh, 40px);
+	--font-size-24: min(2.2vh, 24px);
+	--font-size-20: min(1.9vh, 20px);
+
+	--bg-width: min(164vh, 1774px);
+	--bg-offset: min(23vh, -250px);
+	--header-width: min(31vh, 338px);
+
+    // 719 - 338
+    --diff: 381;
+    --viewport: calc(100vw - 338px);
+    --df: calc(var(--viewport) / var(--diff));
+
+    @media (max-width: $mobile-viewport) { 
+        --font-size-128: calc( var(--df) * (75 - 34) + 34px);
+        --font-size-48: calc( var(--df) * (38 - 24) + 24px);
+    }
+}
+

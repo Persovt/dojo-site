@@ -21,14 +21,12 @@
     <About />
 </div>
 
-<style>
+<style lang='scss'>
 	.root {
 		position: relative;
 		height: 100vh;
 		display: flex;
 		align-items: center;
-
-		margin-left: 250px;
 	}
 
 	.first {
@@ -70,4 +68,10 @@
 		display: flex;
 		justify-content: end;
 	}
+
+    @media (max-width: $mobile-viewport) {
+        .root {
+            flex-direction: column;
+        }        
+    }
 </style>

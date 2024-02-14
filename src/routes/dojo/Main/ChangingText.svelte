@@ -47,6 +47,8 @@
 		height: min(218px, 20.18vh);
 		white-space: nowrap;
 
+		width: fit-content;
+
 		position: relative;
 		color: #210056;
 		font-family: var(--font-family-montserrat);
