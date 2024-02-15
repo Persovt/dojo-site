@@ -1,5 +1,5 @@
 <script>
-	import Logo from '../assets/logo.svelte';
+	import Logo from '../assets/logo-new.svelte';
 	const first = 'Our website is';
 	const second = 'under construction';
 </script>
@@ -16,6 +16,11 @@
 	</div>
 	<div class="logo">
 		<Logo />
+		<span>
+			DOJO <br />
+			DIGITAL <br />
+			SPACE
+		</span>
 	</div>
 </header>
 
@@ -23,7 +28,7 @@
 	header {
 		width: var(--header-width);
 		height: 100vh;
-
+		padding: 32px;
 		display: flex;
 		justify-content: space-between;
 		flex-direction: column;
@@ -56,8 +61,14 @@
 	}
 
 	.logo {
-		width: 228px;
-		height: 143px;
+		display: flex;
+    	gap: 10px;
+
+		span {
+			font-size: var(--font-size-20);
+			font-family: Inter;
+			font-weight: 900;
+		}
 	}
 
 	.first {
@@ -94,7 +105,7 @@
 			justify-content: space-between;
 
 			padding: 3vw 6vw;
-            margin-bottom: 12vw;
+			margin-bottom: 12vw;
 
 			// position: sticky;
 			// top: 0;

@@ -47,6 +47,10 @@
 		flex-direction: column;
 		width: fit-content;
 		align-items: center;
+
+		@media (min-width: $mobile-viewport) {
+			padding: 40px;
+		}
 	}
 
 	/* .words {
@@ -74,18 +78,24 @@
 	}
 
 	.text {
-		color: #fff;
+		// color: #fff;
+		background-image: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.5));
+		color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
 
 		font-family: Inter;
 		font-size: var(--font-size-96);
 		font-weight: 800;
 		line-height: 104.167%; /* 100px */
 		letter-spacing: -0.96px;
-		mix-blend-mode: overlay;
+		// mix-blend-mode: overlay;
 
 		text-transform: uppercase;
 
 		margin-bottom: 4px;
+
+		
 	}
 
 	.break-words {

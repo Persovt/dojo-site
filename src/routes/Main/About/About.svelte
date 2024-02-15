@@ -64,7 +64,7 @@
 			letter-spacing: -1.28px;
 			text-transform: uppercase;
 
-			left: -11px;
+			left: -8px;
 			bottom: -6px;
 			position: relative;
 		}
