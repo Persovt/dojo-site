@@ -92,7 +92,7 @@
 
 	@media (max-width: $mobile-viewport) {
 		.root {
-			height: calc(var(--df) * (127 - 66) + 56px);;
+			height: calc(var(--df) * (127 - 56) + 56px);
 		}
 
 		.rektangle {

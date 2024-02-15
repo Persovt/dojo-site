@@ -6,7 +6,7 @@
 	<div class="bg" />
 	<div class="box">
 		<div class="text break-words">dogo digital space</div>
-		<div class='words'>
+		<div class="words">
 			{#each words as word}
 				<span class="word">{word}</span>
 			{/each}
@@ -14,7 +14,7 @@
 	</div>
 </div>
 
-<style>
+<style lang="scss">
 	.root {
 		width: min(101.94vh, 1101px);
 		height: 100%;
@@ -46,6 +46,7 @@
 		display: flex;
 		flex-direction: column;
 		width: fit-content;
+		align-items: center;
 	}
 
 	/* .words {
@@ -67,7 +68,7 @@
 		-webkit-text-fill-color: transparent;
 
 		&:not(:last-child) {
-		/* TODO: px */
+			/* TODO: px */
 			margin-right: 18px;
 		}
 	}
@@ -93,5 +94,21 @@
 		width: min-content;
 		display: table-caption;
 		word-break: initial;
+	}
+
+	@media (max-width: $mobile-viewport) {
+		.root {
+			width: 100%;
+			justify-content: center;
+			// padding: 260px 0;
+		}
+
+		.box {
+			margin-bottom: 33vw;
+		}
+
+		.bg {
+			display: none;
+		}
 	}
 </style>

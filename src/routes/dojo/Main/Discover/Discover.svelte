@@ -23,13 +23,19 @@
 		<div class={`hidden-discover ${discoverClassName}`}>discover</div>
 	</div>
 	<div class="arrows" on:mouseover={toggleClassName} on:mouseout={toggleClassName}>
-		<Arrow />
-		<Arrow />
-		<Arrow />
+		<div class="arrow">
+			<Arrow />
+		</div>
+		<div class="arrow">
+			<Arrow />
+		</div>
+		<div class="arrow">
+			<Arrow />
+		</div>
 	</div>
 </div>
 
-<style>
+<style lang="scss">
 	.text {
 		width: fit-content;
 		position: relative;
@@ -131,12 +137,37 @@
 		cursor: pointer;
 		color: transparent;
 
+		// transform: rotate(90deg);
+
 		&:hover {
 			color: #fff;
 
 			& + .discover {
 				opacity: 0;
 			}
+		}
+	}
+
+	.arrow {
+		margin-right: -20px;
+	}
+
+	@media (max-width: $mobile-viewport) {
+		.root {
+			padding-top: 4vw;
+			margin-bottom: 31vw;
+		}
+
+		.arrows {
+			transform: rotate(90deg) translateY(46px) scale(0.5);
+		}
+
+		.verbs {
+			right: -8vw;
+		}
+
+		.discover {
+			margin-bottom: -12px;
 		}
 	}
 </style>

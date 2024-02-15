@@ -7,29 +7,36 @@
 </script>
 
 <div class="root">
-	<div class="first">
-		<div class="bg2" />
-		<div class="text">
-			<ChangingText />
-			<StaticText />
-			<div class="discover">
-				<Discover />
+	<div class="wrapper">
+		<div class="changingText">
+			<div class="bg2" />
+			<div class="text">
+				<ChangingText />
+				<StaticText />
+				<div class="discover">
+					<Discover />
+				</div>
 			</div>
 		</div>
+		<Digital />
 	</div>
-	<Digital />
 	<About />
 </div>
 
 <style lang="scss">
-	.root {
+	.root,
+	.wrapper {
 		position: relative;
 		height: 100vh;
 		display: flex;
 		align-items: center;
 	}
 
-	.first {
+	.wrapper {
+		position: relative;
+	}
+
+	.changingText {
 		position: relative;
 		display: flex;
 		align-items: center;
@@ -70,12 +77,46 @@
 	}
 
 	@media (max-width: $mobile-viewport) {
+		.wrapper,
 		.root {
 			flex-direction: column;
+			height: 450vw;
 		}
 
-        .text {
-            padding: 0 10vw;
-        }
+		.wrapper {
+			// padding-top: 90px;
+			margin-bottom: 100px;
+			width: 100%;
+
+			&::before {
+				content: '';
+				position: absolute;
+				height: 100%;
+				width: 100%;
+
+				background-image: url('./assets/good-bg.png');
+
+				z-index: -1;
+				background-size: cover;
+				background-position: 0 -64vw;
+				background-repeat: no-repeat;
+			}
+		}
+
+		.text {
+			padding: 0 10vw;
+		}
+
+		.discover {
+			justify-content: start;
+		}
+
+		.bg2 {
+			display: none;
+		}
+
+		.changingText {
+			// margin-bottom: 120px;
+		}
 	}
 </style>
