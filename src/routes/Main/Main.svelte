@@ -18,12 +18,30 @@
 				</div>
 			</div>
 		</div>
+		<!-- <div class="middleBlock" /> -->
 		<Digital />
 	</div>
 	<About />
 </div>
 
 <style lang="scss">
+	.middleBlock {
+		background-image: url('./assets/lines.gif');
+
+		background-size: 100% 100%;
+		display: block;
+
+		height: 100%;
+		left: 260px;
+		z-index: 3;
+		width: 100%;
+
+		position: absolute;
+
+		mix-blend-mode: screen;
+		transform: rotate(90deg);
+		background-repeat: no-repeat;
+	}
 	.root,
 	.wrapper {
 		position: relative;
