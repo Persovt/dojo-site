@@ -75,8 +75,7 @@
 		justify-content: space-between;
 		flex-direction: column;
 
-		width: 100%;
-		max-width: 560px;
+		width: 560px;
 
 		@media (max-height: 980px) {
 			width: 470px;
@@ -97,7 +96,7 @@
 		& .text {
 			color: #210056;
 			text-align: justify;
-			font-size: 20px;
+			font-size: var(--font-size-20);
 			font-weight: 400;
 			line-height: normal;
 		}
@@ -121,8 +120,8 @@
 	}
 
 	@media (max-width: $mobile-viewport) {
-        .root {
-            --gap: 50px;
+		.root {
+			--gap: 50px;
 			flex-direction: column;
 			padding: 6%;
 
@@ -130,27 +129,27 @@
 
 			gap: var(--gap);
 
-            padding-bottom: 80px;
+			padding-bottom: 80px;
 		}
 
 		.rightBlock {
 			width: unset;
-            gap: 50px;
-            align-items: center;
+			gap: 50px;
+			align-items: center;
 
-            & .title {
-                text-align: center;
-            }
+			& .title {
+				text-align: center;
+			}
 
-            & .item {
-                max-width: 90%;
-            }
+			& .item {
+				max-width: 90%;
+			}
 		}
 
 		.leftBlock {
 			background: linear-gradient(270deg, #210056 0%, #ae47ff 100%);
 			border-radius: 5vw;
-            padding-top: 6vw;
+			padding-top: 6vw;
 
 			& .title {
 				left: -1vw;

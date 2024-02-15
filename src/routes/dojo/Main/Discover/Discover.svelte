@@ -154,7 +154,7 @@
 
 	@media (max-width: $mobile-viewport) {
 		.root {
-			padding-top: 4vw;
+			padding-top: 12vw;
 			margin-bottom: 31vw;
 		}
 

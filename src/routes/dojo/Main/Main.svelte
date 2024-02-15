@@ -33,7 +33,7 @@
 	}
 
 	.wrapper {
-		position: relative;
+		// position: relative;
 	}
 
 	.changingText {
@@ -80,12 +80,13 @@
 		.wrapper,
 		.root {
 			flex-direction: column;
-			height: 450vw;
+			height: auto;
+			// height: 450vw;
 		}
 
 		.wrapper {
 			// padding-top: 90px;
-			margin-bottom: 100px;
+			// margin-bottom: 100px;
 			width: 100%;
 
 			&::before {
@@ -98,7 +99,7 @@
 
 				z-index: -1;
 				background-size: cover;
-				background-position: 0 -64vw;
+				background-position: 0 -60vw;
 				background-repeat: no-repeat;
 			}
 		}

@@ -85,16 +85,16 @@
 	@media (max-width: $mobile-viewport) {
 		header {
 			width: 100vw;
-			height: var(--header-height);
+			height: auto;
+			// height: var(--header-height);
 
-			margin-bottom: var(--header-height);
 			margin-right: 0;
 
 			flex-direction: row-reverse;
 			justify-content: space-between;
 
-			padding: 12px 24px;
-            margin-bottom: 48px;
+			padding: 3vw 6vw;
+            margin-bottom: 12vw;
 
 			// position: sticky;
 			// top: 0;
