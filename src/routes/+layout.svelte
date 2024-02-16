@@ -4,6 +4,7 @@
     import { webVitals } from '$lib/vitals';
     import './styles.scss';
     import '@fontsource/inter';
+    import '@fontsource/inter/200.css';
     import '@fontsource/inter/800.css';
     import '@fontsource/inter/900.css';
     import "@fontsource/montserrat";

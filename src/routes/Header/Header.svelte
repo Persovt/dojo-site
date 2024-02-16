@@ -62,7 +62,9 @@
 
 	.logo {
 		display: flex;
-    	gap: 10px;
+		gap: 10px;
+
+		padding-bottom: 24px;
 
 		span {
 			font-size: var(--font-size-20);
@@ -73,21 +75,21 @@
 
 	.first {
 		line-height: 104.167%; /* 41.667px */
-		background: linear-gradient(90deg, #210056 0.21%, #9747ff 100%);
 		font-weight: 200;
 		letter-spacing: -0.4px;
 
+		background: linear-gradient(180deg, #210056 0.21%, #9747ff 100%);
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
 
 	.second {
-		background: linear-gradient(90deg, #210056 0.21%, #9747ff 100%);
 		font-weight: 800;
 		line-height: 104.167%;
 		letter-spacing: -0.4px;
 
+		background: linear-gradient(180deg, #210056 0.21%, #9747ff 100%);
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -121,8 +123,27 @@
 		}
 
 		.logo {
-			width: 139px;
-			height: 83px;
+			width: 24vw;
+			padding: 0;
+			align-items: center;
+
+			span {
+				height: fit-content;
+			}
+		}
+
+		.first {
+			background: linear-gradient(90deg, #210056 0.21%, #9747ff 100%);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+		.second {
+			background: linear-gradient(90deg, #210056 0.21%, #9747ff 100%);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
 		}
 	}
 </style>
