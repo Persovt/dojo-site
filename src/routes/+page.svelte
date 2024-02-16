@@ -15,13 +15,13 @@
 
 <style lang="scss">
 	@function calcFluidFontSize($f-min, $f-max, $v-min, $v-max) {
-    	@return 30px;
-  /* $k: ($f-max - $f-min)/($v-max - $v-min);
+		@return 30px;
+		/* $k: ($f-max - $f-min)/($v-max - $v-min);
   $b: $f-min - $k * $v-min;
 
   $b: $b * 1px; */
 
-  /* @return calc( #{$k} * 100vw + #{$b} ); */
+		/* @return calc( #{$k} * 100vw + #{$b} ); */
 	}
 
 	main {

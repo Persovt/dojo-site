@@ -4,7 +4,7 @@
 
 <div class="root">
 	<div class="bg" />
-	<div class="box">
+	<div class="box" id='box'>
 		<div class="text break-words">dogo digital space</div>
 		<div class="words">
 			{#each words as word}

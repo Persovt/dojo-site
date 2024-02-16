@@ -4,6 +4,8 @@
 	const second = 'under construction';
 </script>
 
+<div id='main'></div>
+
 <header>
 	<div class="kostil" />
 	<div class="text">
@@ -14,14 +16,14 @@
 			{second}
 		</div>
 	</div>
-	<div class="logo">
+	<a class="logo" href='#main'>
 		<Logo />
 		<span>
 			DOJO <br />
 			DIGITAL <br />
 			SPACE
 		</span>
-	</div>
+	</a>
 </header>
 
 <style lang="scss">
@@ -40,6 +42,11 @@
 		z-index: 1;
 
 		margin-right: 250px;
+	}
+
+	a {
+		text-decoration: none;
+		color: inherit;
 	}
 
 	.text {

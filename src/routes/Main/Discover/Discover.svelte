@@ -6,7 +6,6 @@
 	function toggleClassName() {
 		if (discoverClassName) {
 			discoverClassName = '';
-			// discoverClassName = 'hidden-discover-active';
 		} else {
 			discoverClassName = 'hidden-discover-active';
 		}
@@ -22,7 +21,7 @@
 		/ <span class="discover-text">discover</span>
 		<div class={`hidden-discover ${discoverClassName}`}>discover</div>
 	</div>
-	<div class="arrows" on:mouseover={toggleClassName} on:mouseout={toggleClassName}>
+	<a href='#box' class="arrows" on:mouseenter={toggleClassName} on:mouseleave={toggleClassName}>
 		<div class="arrow">
 			<Arrow />
 		</div>
@@ -32,7 +31,7 @@
 		<div class="arrow">
 			<Arrow />
 		</div>
-	</div>
+	</a>
 </div>
 
 <style lang="scss">
@@ -139,11 +138,13 @@
 
 		// transform: rotate(90deg);
 
-		&:hover {
-			color: #fff;
+		@media (hover: hover) {
+			&:hover {
+				color: #fff;
 
-			& + .discover {
-				opacity: 0;
+				& + .discover {
+					opacity: 0;
+				}
 			}
 		}
 	}
@@ -168,6 +169,10 @@
 
 		.discover {
 			margin-bottom: -12px;
+		}
+
+		.hidden-discover {
+			display: none;
 		}
 	}
 </style>
