@@ -11,6 +11,7 @@
 		<div class="newBg">
 			<div class="changingText">
 				<!-- <div class="bg2" /> -->
+				<div class="middleBlock" />
 				<div class="text">
 					<ChangingText />
 					<StaticText />
@@ -30,20 +31,21 @@
 <style lang="scss">
 	.middleBlock {
 		background-image: url('./assets/lines.gif');
-
 		background-size: 100% 100%;
-		display: block;
 
 		height: 100%;
-		left: 260px;
-		z-index: 3;
 		width: 100%;
+
+		z-index: 1;
 
 		position: absolute;
 
 		mix-blend-mode: screen;
-		transform: rotate(90deg);
+		transform: rotate(78deg);
 		background-repeat: no-repeat;
+
+		left: 77%;
+		top: 11%;
 	}
 	.root,
 	.wrapper {
@@ -87,28 +89,10 @@
 		.newBg {
 			flex-direction: column;
 			height: auto;
-			// height: 450vw;
 		}
 
 		.wrapper {
-			// padding-top: 90px;
-			// margin-bottom: 100px;
 			width: 100%;
-
-			// &::before {
-			// 	content: '';
-			// 	position: absolute;
-			// 	height: 100%;
-			// 	width: 100%;
-
-			// 	background-image: url('./assets/good-bg.png');
-			// 	background-image: url('./assets/final.svg');
-
-			// 	z-index: -1;
-			// 	background-size: cover;
-			// 	background-position: 0 -60vw;
-			// 	background-repeat: no-repeat;
-			// }
 		}
 
 		.newBg {
@@ -129,12 +113,10 @@
 			justify-content: start;
 		}
 
-		// .bg2 {
-		// 	display: none;
-		// }
-
-		.changingText {
-			// margin-bottom: 120px;
+		.middleBlock {
+			transform: rotate(168deg);
+			left: 2%;
+			top: 54%;
 		}
 	}
 </style>
