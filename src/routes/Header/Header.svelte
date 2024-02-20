@@ -28,6 +28,8 @@
 
 <style lang="scss">
 	header {
+		z-index: 10;
+
 		width: var(--header-width);
 		height: 100vh;
 		padding: 32px;
@@ -39,7 +41,6 @@
 		position: sticky;
 		left: 0;
 		background: #fff;
-		z-index: 1;
 
 		margin-right: 250px;
 	}

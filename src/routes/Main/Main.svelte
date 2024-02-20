@@ -8,19 +8,22 @@
 
 <div class="root">
 	<div class="wrapper">
-		<div class="changingText">
-			<div class="bg2" />
-			<div class="text">
-				<ChangingText />
-				<StaticText />
-				<div class="discover">
-					<Discover />
+		<div class="newBg">
+			<div class="changingText">
+				<!-- <div class="bg2" /> -->
+				<div class="text">
+					<ChangingText />
+					<StaticText />
+					<div class="discover">
+						<Discover />
+					</div>
 				</div>
 			</div>
 		</div>
 		<!-- <div class="middleBlock" /> -->
 		<Digital />
 	</div>
+
 	<About />
 </div>
 
@@ -50,37 +53,21 @@
 		align-items: center;
 	}
 
-	.wrapper {
-		// position: relative;
+	.newBg {
+		height: 100vh;
+		display: flex;
+		align-items: center;
+
+		background: linear-gradient(90deg, #fff 33.26%, #9747ff 99.9%);
+
+		margin-right: -100px;
+		padding-right: 200px;
 	}
 
 	.changingText {
 		position: relative;
 		display: flex;
 		align-items: center;
-	}
-
-	.bg {
-		width: 1774px;
-		height: 133%;
-		position: absolute;
-		z-index: -1;
-		left: -58%;
-
-		border-radius: 100%;
-		background: linear-gradient(90deg, #fff 60.26%, #9747ff 99.9%);
-	}
-
-	.bg2 {
-		z-index: -1;
-		background-image: url('./assets/bg.svg');
-		width: var(--bg-width);
-		right: var(--bg-offset);
-		position: absolute;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		min-height: 100vh;
 	}
 
 	.text {
@@ -96,7 +83,8 @@
 
 	@media (max-width: $mobile-viewport) {
 		.wrapper,
-		.root {
+		.root,
+		.newBg {
 			flex-direction: column;
 			height: auto;
 			// height: 450vw;
@@ -107,19 +95,30 @@
 			// margin-bottom: 100px;
 			width: 100%;
 
-			&::before {
-				content: '';
-				position: absolute;
-				height: 100%;
-				width: 100%;
+			// &::before {
+			// 	content: '';
+			// 	position: absolute;
+			// 	height: 100%;
+			// 	width: 100%;
 
-				background-image: url('./assets/good-bg.png');
+			// 	background-image: url('./assets/good-bg.png');
+			// 	background-image: url('./assets/final.svg');
 
-				z-index: -1;
-				background-size: cover;
-				background-position: 0 -60vw;
-				background-repeat: no-repeat;
-			}
+			// 	z-index: -1;
+			// 	background-size: cover;
+			// 	background-position: 0 -60vw;
+			// 	background-repeat: no-repeat;
+			// }
+		}
+
+		.newBg {
+			width: 100%;
+			margin-right: 0;
+			padding-right: 0;
+
+			margin-bottom: -30vw;
+
+			background: linear-gradient(180deg, #fff 33.26%, #9747ff 99.9%);
 		}
 
 		.text {
@@ -130,9 +129,9 @@
 			justify-content: start;
 		}
 
-		.bg2 {
-			display: none;
-		}
+		// .bg2 {
+		// 	display: none;
+		// }
 
 		.changingText {
 			// margin-bottom: 120px;

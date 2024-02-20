@@ -75,7 +75,7 @@
 		justify-content: space-between;
 		flex-direction: column;
 
-		width: 560px;
+		width: 410px;
 
 		@media (max-height: 980px) {
 			width: 470px;

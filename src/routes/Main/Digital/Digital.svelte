@@ -3,20 +3,23 @@
 </script>
 
 <div class="root">
-	<div class="bg" />
-	<div class="box" id='box'>
-		<div class="text break-words">dogo digital space</div>
-		<div class="words">
-			{#each words as word}
-				<span class="word">{word}</span>
-			{/each}
+	<div class='wrapper bg'>
+		<div class="box" id="box">
+			<div class="text break-words">dogo digital space</div>
+			<div class="words">
+				{#each words as word}
+					<span class="word">{word}</span>
+				{/each}
+			</div>
 		</div>
 	</div>
 </div>
 
 <style lang="scss">
-	.root {
-		width: min(101.94vh, 1101px);
+	.root, .wrapper {
+		z-index: 1;
+		width: min(130vh, 1300px);
+		// width: min(101.94vh, 1101px);
 		height: 100%;
 
 		position: relative;
@@ -24,22 +27,19 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
+
+		margin-left: min(-12vh, -108px);
 	}
 
 	.bg {
-		/* --line-step: 2px;
-		--line-color: #9c51ff;
-		--line: var(--line-color) calc(var(--line-step) + 3px); */
-
 		width: 100%;
 		height: 100%;
 
 		position: absolute;
 		z-index: -2;
-		background: url('./assets/1.webp');
-		background-size: 12px;
-		/* background: repeating-linear-gradient(90deg, transparent 0 var(--line-step), var(--line)),
-			repeating-linear-gradient(0deg, transparent 0 var(--line-step), var(--line)); */
+		background: url('../assets/final2.svg');
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 
 	.box {
@@ -52,11 +52,6 @@
 			padding: 40px;
 		}
 	}
-
-	/* .words {
-		display: flex;
-		justify-content: space-between;
-	} */
 
 	.word {
 		font-family: Inter;
@@ -78,7 +73,6 @@
 	}
 
 	.text {
-		// color: #fff;
 		background-image: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.5));
 		color: transparent;
 		-webkit-background-clip: text;
@@ -89,13 +83,10 @@
 		font-weight: 800;
 		line-height: 104.167%; /* 100px */
 		letter-spacing: -0.96px;
-		// mix-blend-mode: overlay;
 
 		text-transform: uppercase;
 
 		margin-bottom: 4px;
-
-		
 	}
 
 	.break-words {
@@ -107,18 +98,21 @@
 	}
 
 	@media (max-width: $mobile-viewport) {
-		.root {
+		.root, .wrapper {
 			width: 100%;
 			justify-content: center;
-			// padding: 260px 0;
+			margin-left: 0;
+			height: 100vw;
 		}
 
 		.box {
-			margin-bottom: 33vw;
+			transform: rotate(270deg);
 		}
 
 		.bg {
-			display: none;
+			transform: rotate(90deg);
+			height: 100vw;
+			align-items: center;
 		}
 	}
 </style>
