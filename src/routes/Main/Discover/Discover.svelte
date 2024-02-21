@@ -21,7 +21,7 @@
 		/ <span class="discover-text">discover</span>
 		<div class={`hidden-discover ${discoverClassName}`}>discover</div>
 	</div>
-	<a href='#box' class="arrows" on:mouseenter={toggleClassName} on:mouseleave={toggleClassName}>
+	<a href="#box" class="arrows" on:mouseenter={toggleClassName} on:mouseleave={toggleClassName}>
 		<div class="arrow">
 			<Arrow />
 		</div>
@@ -78,8 +78,7 @@
 
 	.discover-text {
 		font-style: normal;
-		font-weight: 400;
-		font-family: 'OCR A Extended';
+		font-weight: 900;
 	}
 
 	.hidden-discover {
