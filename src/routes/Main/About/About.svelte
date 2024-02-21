@@ -102,7 +102,7 @@
 		}
 
 		& .mark {
-			background: linear-gradient(90deg, #210056 0.01%, #9747ff 94.35%);
+			background: linear-gradient(270deg, #210056 0.01%, #9747ff 94.35%);
 			background-clip: text;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;

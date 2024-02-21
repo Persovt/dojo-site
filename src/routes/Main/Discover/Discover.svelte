@@ -6,6 +6,7 @@
 	function toggleClassName() {
 		if (discoverClassName) {
 			discoverClassName = '';
+			// discoverClassName = 'hidden-discover-active';
 		} else {
 			discoverClassName = 'hidden-discover-active';
 		}
@@ -18,7 +19,7 @@
 		<div class="verbs">create. <br />inspire. <br /> impact.</div>
 	</div>
 	<div class="discover">
-		/ <span class="discover-text">discover</span>
+		/<span class="discover-text">discover</span>
 		<div class={`hidden-discover ${discoverClassName}`}>discover</div>
 	</div>
 	<a href="#box" class="arrows" on:mouseenter={toggleClassName} on:mouseleave={toggleClassName}>
@@ -48,7 +49,7 @@
 		color: #210056;
 		font-size: var(--font-size-96);
 		line-height: 90.206%; /* 86.598px */
-		letter-spacing: -10.56px;
+		letter-spacing: calc(var(--font-size-96) * -0.109);
 	}
 
 	.verbs {
@@ -59,7 +60,7 @@
 		letter-spacing: -1px;
 
 		position: absolute;
-		top: 0;
+		top: 4px;
 		right: -69px;
 	}
 
@@ -73,7 +74,8 @@
 		font-weight: 800;
 		line-height: normal;
 
-		margin-bottom: 37px;
+		margin: 10px 0 37px 40%;
+		text-wrap: nowrap;
 	}
 
 	.discover-text {
@@ -83,10 +85,9 @@
 
 	.hidden-discover {
 		position: absolute;
-		top: -58px;
-		left: 36px;
-
-		rotate: 270deg;
+		top: 0;
+		left: 0;
+		transform: rotate(270deg) translate(75%, -150%);
 
 		color: #210056;
 		font-family: Inter;
@@ -105,7 +106,7 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-			height: 24px;
+			height: calc(var(--font-size-20) + 4px);
 			background: #fff;
 			transition: all 2s linear;
 		}
@@ -135,7 +136,7 @@
 		cursor: pointer;
 		color: transparent;
 
-		// transform: rotate(90deg);
+		padding-left: 24px;
 
 		@media (hover: hover) {
 			&:hover {
@@ -159,15 +160,18 @@
 		}
 
 		.arrows {
+			padding-left: 0;
 			transform: rotate(90deg) translateY(46px) scale(0.5);
 		}
 
 		.verbs {
-			right: -8vw;
+			right: -9vw;
+			top: 0;
+			transform: scale(0.9);
 		}
 
 		.discover {
-			margin-bottom: -12px;
+			margin: 0 0 3px -20px;
 		}
 
 		.hidden-discover {

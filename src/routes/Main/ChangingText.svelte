@@ -44,6 +44,7 @@
 
 <style lang="scss">
 	.root {
+		margin-top: 5vh;
 		height: min(218px, 20.18vh);
 		white-space: nowrap;
 
@@ -92,6 +93,7 @@
 
 	@media (max-width: $mobile-viewport) {
 		.root {
+			margin: 0;
 			height: calc(var(--df) * (127 - 56) + 56px);
 		}
 

@@ -42,7 +42,7 @@
 		left: 0;
 		background: #fff;
 
-		margin-right: 250px;
+		margin-right: 290px;
 	}
 
 	a {

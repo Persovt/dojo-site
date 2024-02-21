@@ -44,7 +44,7 @@
 		transform: rotate(78deg);
 		background-repeat: no-repeat;
 
-		left: 77%;
+		left: 80%;
 		top: 11%;
 	}
 	.root,
@@ -62,7 +62,7 @@
 
 		background: linear-gradient(90deg, #fff 33.26%, #9747ff 99.9%);
 
-		margin-right: -100px;
+		margin-right: -60px;
 		padding-right: 200px;
 	}
 
