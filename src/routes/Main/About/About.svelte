@@ -102,12 +102,17 @@
 		}
 
 		& .mark {
-			background: linear-gradient(270deg, #210056 0.01%, #9747ff 94.35%);
+			background: linear-gradient(
+				90deg,
+				rgba(151, 71, 255, 1) 0%,
+				rgba(9, 9, 121, 1) 50%,
+				rgba(151, 71, 255, 1) 100%
+			);
 			background-clip: text;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
 
-			font-weight: 600;
+			font-weight: 500;
 		}
 	}
 
@@ -137,6 +142,7 @@
 			gap: 50px;
 			align-items: center;
 
+			& .text,
 			& .title {
 				text-align: center;
 			}
