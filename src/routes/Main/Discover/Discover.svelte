@@ -36,8 +36,6 @@
 
 <style lang="scss">
 	.text {
-		// width: fit-content;
-		// position: relative;
 		font-family: Montserrat;
 		font-style: italic;
 		font-weight: 800;
@@ -47,19 +45,23 @@
 	.we {
 		text-transform: uppercase;
 		color: #210056;
-		// font-size: var(--font-size-96);
-		font-size: 65px;
-		line-height: 90.206%; /* 86.598px */
+
+		font-size: 95px;
+
+		line-height: 90.206%;
 		letter-spacing: calc(var(--font-size-96) * -0.109);
 	}
 
 	.verbs {
-		margin: 2px 0 0 -7px;
 		color: #fff;
 		text-align: center;
-		font-size: 15px;
-		line-height: 18px;
+		font-size: 18px;
+
 		letter-spacing: -1px;
+
+		margin: 4px 0 0 -7px;
+
+		line-height: 26px;
 	}
 
 	.discover {
@@ -124,6 +126,7 @@
 
 	.hidden-discover-active {
 		opacity: 1;
+
 		/* TODO: эта херня пока не работает*/
 		& .hidden-discover:before {
 			width: 100%;
@@ -156,7 +159,6 @@
 	@media (max-width: $mobile-viewport) {
 		.root {
 			padding-top: 100px;
-			// margin-bottom: 31vw;
 		}
 
 		.arrows {
@@ -176,6 +178,16 @@
 
 		.hidden-discover {
 			display: none;
+		}
+
+		.we {
+			font-size: 65px;
+		}
+
+		.verbs {
+			font-size: 14px;
+			margin: 0px 0 0 -7px;
+			line-height: 19.8px;
 		}
 	}
 </style>

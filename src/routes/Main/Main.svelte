@@ -73,7 +73,7 @@
 	.wrapper {
 		// background: linear-gradient(90deg, #fff 33.26%, #9747ff 99.9%) no-repeat; // TODO: норм градиент
 
-		background: linear-gradient(90deg, #fff 23.26%, #9747ff 39.9%, #9747ff 99.9%) no-repeat;
+		background: linear-gradient(90deg, #fff 23.26%, #9747ff 39.9%, #000000 99.9%) no-repeat;
 	}
 
 	.section-main {
@@ -93,7 +93,7 @@
 		// background-position: auto, left;
 		mix-blend-mode: screen;
 
-		padding: 300px 0 150px;
+		// padding: 300px 0 150px;
 	}
 
 	.newBg {
@@ -142,7 +142,7 @@
 
 		.wrapper {
 			width: 100%;
-			background: linear-gradient(180deg, #fff 23.26%, #9747ff 39.9%, #9747ff 99.9%) no-repeat;
+			background: linear-gradient(180deg, #fff 23.26%, #9747ff 39.9%, #000000 99.9%) no-repeat;
 		}
 
 		.newBg {
@@ -172,13 +172,12 @@
 		.section-digital {
 			background: url('./assets/second-bg-mobile.svg') no-repeat,
 				url('./assets/lines.gif') no-repeat;
-			// background-size: 100% 100%, 60% 100%;
-			// background-position: 0 0, -300px 0;
-			// background-position: 0 0,  0;
-			// mix-blend-mode: screen;
-			background-size: cover, 150% 100%;
-			background-position: center top, -310px -350px;
+
+			background-size: cover, 200% 100%;
+			background-position: center top, -310px -300px;
 			mix-blend-mode: screen;
+
+			padding: 230px 0 150px;
 		}
 	}
 </style>
