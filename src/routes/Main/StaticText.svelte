@@ -14,7 +14,7 @@
 	}
 
 	.mark {
-		font-weight: 600;
+		font-weight: 500;
 		line-height: 100%;
 		letter-spacing: -1.44px;
 	}

@@ -102,7 +102,8 @@
 			width: 100%;
 			justify-content: center;
 			margin-left: 0;
-			height: 100vw;
+			// height: 100vw;
+			padding: 0;
 		}
 
 		.box {
@@ -111,7 +112,7 @@
 
 		.bg {
 			transform: rotate(90deg);
-			height: 100vw;
+			// height: 100vw;
 			align-items: center;
 		}
 	}

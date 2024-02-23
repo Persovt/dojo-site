@@ -78,9 +78,9 @@
 		align-items: center;
 		justify-content: center;
 	}
-	
+
 	.section-digital {
-		background: url('./assets/final2.svg') no-repeat, url('./assets/vertical-lines.gif') no-repeat;
+		background: url('./assets/second-bg.svg') no-repeat, url('./assets/vertical-lines.gif') no-repeat;
 		// background-size: 100% 100%, 60% 100%;
 		// background-position: 0 0, -300px 0;
 		background-position: 0 0, -125px 0;
@@ -119,15 +119,22 @@
 	}
 
 	@media (max-width: $mobile-viewport) {
-		.wrapper,
+		// .wrapper,
+		// .root,
+		// .newBg {
+		// 	flex-direction: column;
+		// 	height: auto;
+		// }
+
 		.root,
-		.newBg {
-			flex-direction: column;
-			height: auto;
+		.wrapper {
+			grid-template-rows: 1fr 1fr;
+			grid-template-columns: 1fr;
 		}
 
 		.wrapper {
 			width: 100%;
+			background: linear-gradient(180deg, #fff 23.26%, #9747ff 39.9%, #9747ff 99.9%) no-repeat;
 		}
 
 		.newBg {
@@ -152,6 +159,17 @@
 			transform: rotate(168deg);
 			left: 2%;
 			top: 54%;
+		}
+
+		.section-digital {
+			background: url('./assets/second-bg-mobile.svg') no-repeat, url('./assets/lines.gif') no-repeat;
+			// background-size: 100% 100%, 60% 100%;
+			// background-position: 0 0, -300px 0;
+			// background-position: 0 0,  0;
+			// mix-blend-mode: screen;
+			background-size: cover, 100% 100%;
+			background-position: center bottom, 0 0;
+			mix-blend-mode: screen;
 		}
 	}
 </style>
