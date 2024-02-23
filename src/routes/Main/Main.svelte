@@ -35,6 +35,9 @@
 </div>
 
 <style lang="scss">
+	.root {
+		display: flex;
+	}
 	// .middleBlock {
 	// 	height: 100%;
 	// 	width: 100%;
@@ -56,7 +59,7 @@
 	// 	right: -70px;
 	// }
 
-	.root,
+	// .root,
 	.wrapper {
 		// position: relative;
 		// height: 100vh;
@@ -80,7 +83,8 @@
 	}
 
 	.section-digital {
-		background: url('./assets/second-bg.svg') no-repeat, url('./assets/vertical-lines.gif') no-repeat;
+		background: url('./assets/second-bg.svg') no-repeat,
+			url('./assets/vertical-lines.gif') no-repeat;
 		// background-size: 100% 100%, 60% 100%;
 		// background-position: 0 0, -300px 0;
 		background-position: 0 0, -125px 0;
@@ -88,6 +92,8 @@
 		background-size: cover, 100% 100%;
 		// background-position: auto, left;
 		mix-blend-mode: screen;
+
+		padding: 300px 0 150px;
 	}
 
 	.newBg {
@@ -125,8 +131,10 @@
 		// 	flex-direction: column;
 		// 	height: auto;
 		// }
+		.root {
+			flex-direction: column;
+		}
 
-		.root,
 		.wrapper {
 			grid-template-rows: 1fr 1fr;
 			grid-template-columns: 1fr;
@@ -162,13 +170,14 @@
 		}
 
 		.section-digital {
-			background: url('./assets/second-bg-mobile.svg') no-repeat, url('./assets/lines.gif') no-repeat;
+			background: url('./assets/second-bg-mobile.svg') no-repeat,
+				url('./assets/lines.gif') no-repeat;
 			// background-size: 100% 100%, 60% 100%;
 			// background-position: 0 0, -300px 0;
 			// background-position: 0 0,  0;
 			// mix-blend-mode: screen;
-			background-size: cover, 100% 100%;
-			background-position: center bottom, 0 0;
+			background-size: cover, 150% 100%;
+			background-position: center top, -310px -350px;
 			mix-blend-mode: screen;
 		}
 	}

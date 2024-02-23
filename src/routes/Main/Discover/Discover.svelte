@@ -155,8 +155,8 @@
 
 	@media (max-width: $mobile-viewport) {
 		.root {
-			padding-top: 12vw;
-			margin-bottom: 31vw;
+			padding-top: 100px;
+			// margin-bottom: 31vw;
 		}
 
 		.arrows {
