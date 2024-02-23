@@ -8,10 +8,11 @@
 
 <div class="root">
 	<div class="wrapper">
-		<div class="newBg">
+		<!-- <div class="newBg"> -->
+		<div class="section section-main">
 			<div class="changingText">
 				<!-- <div class="bg2" /> -->
-				<div class="middleBlock" />
+				<!-- <div class="middleBlock" /> -->
 				<div class="text">
 					<ChangingText />
 					<StaticText />
@@ -21,42 +22,76 @@
 				</div>
 			</div>
 		</div>
-		<!-- <div class="middleBlock" /> -->
-		<Digital />
+		<!-- </div> -->
+		<!-- <div class="middleBlock">
+			<div class="middleBlock-bg" />
+		</div> -->
+		<div class="section section-digital">
+			<Digital />
+		</div>
 	</div>
 
 	<About />
 </div>
 
 <style lang="scss">
-	.middleBlock {
-		background-image: url('./assets/lines.gif');
-		background-size: 100% 100%;
+	// .middleBlock {
+	// 	height: 100%;
+	// 	width: 100%;
+	// 	overflow: hidden;
+	// }
+	// .middleBlock-bg {
+	// 	background-image: url('./assets/lines.gif');
 
-		height: 100%;
-		width: 100%;
+	// 	background-size: 100% 90%;
+	// 	background-position-x: 210px;
+	// 	height: 100%;
+	// 	width: 100%;
+	// 	z-index: 1;
+	// 	position: absolute;
+	// 	mix-blend-mode: screen;
+	// 	transform: rotate(90deg);
+	// 	background-repeat: no-repeat;
+	// 	top: 11%;
+	// 	right: -70px;
+	// }
 
-		z-index: 1;
-
-		position: absolute;
-
-		mix-blend-mode: screen;
-		transform: rotate(78deg);
-		background-repeat: no-repeat;
-
-		left: 80%;
-		top: 11%;
-	}
 	.root,
 	.wrapper {
-		position: relative;
-		height: 100vh;
+		// position: relative;
+		// height: 100vh;
+		// display: flex;
+		// align-items: center;
+		display: grid;
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.wrapper {
+		// background: linear-gradient(90deg, #fff 33.26%, #9747ff 99.9%) no-repeat; // TODO: норм градиент
+
+		background: linear-gradient(90deg, #fff 23.26%, #9747ff 39.9%, #9747ff 99.9%) no-repeat;
+	}
+
+	.section-main {
 		display: flex;
 		align-items: center;
+		justify-content: center;
+	}
+	
+	.section-digital {
+		background: url('./assets/final2.svg') no-repeat, url('./assets/vertical-lines.gif') no-repeat;
+		// background-size: 100% 100%, 60% 100%;
+		// background-position: 0 0, -300px 0;
+		background-position: 0 0, -125px 0;
+		// mix-blend-mode: screen;
+		background-size: cover, 100% 100%;
+		// background-position: auto, left;
+		mix-blend-mode: screen;
 	}
 
 	.newBg {
-		height: 100vh;
+		height: 100%;
 		display: flex;
 		align-items: center;
 

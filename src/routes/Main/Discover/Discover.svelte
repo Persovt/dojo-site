@@ -6,7 +6,6 @@
 	function toggleClassName() {
 		if (discoverClassName) {
 			discoverClassName = '';
-			// discoverClassName = 'hidden-discover-active';
 		} else {
 			discoverClassName = 'hidden-discover-active';
 		}
@@ -37,31 +36,30 @@
 
 <style lang="scss">
 	.text {
-		width: fit-content;
-		position: relative;
+		// width: fit-content;
+		// position: relative;
 		font-family: Montserrat;
 		font-style: italic;
 		font-weight: 800;
+		display: flex;
 	}
 
 	.we {
 		text-transform: uppercase;
 		color: #210056;
-		font-size: var(--font-size-96);
+		// font-size: var(--font-size-96);
+		font-size: 65px;
 		line-height: 90.206%; /* 86.598px */
 		letter-spacing: calc(var(--font-size-96) * -0.109);
 	}
 
 	.verbs {
+		margin: 2px 0 0 -7px;
 		color: #fff;
 		text-align: center;
-		font-size: var(--font-size-20);
-		line-height: 131%; /* 26.2px */
+		font-size: 15px;
+		line-height: 18px;
 		letter-spacing: -1px;
-
-		position: absolute;
-		top: 4px;
-		right: -69px;
 	}
 
 	.discover {
@@ -98,6 +96,8 @@
 
 		opacity: 0;
 		transition: 0.3s opacity linear;
+
+		padding: 0 3px;
 
 		&:before {
 			opacity: 1;
@@ -149,7 +149,7 @@
 		}
 	}
 
-	.arrow {
+	.arrow:not(:last-child) {
 		margin-right: -20px;
 	}
 

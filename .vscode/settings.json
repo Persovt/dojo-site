@@ -1,3 +1,5 @@
 {
-    "svg.preview.background": "white"
+    "svg.preview.background": "white",
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.explorerKind": "external"
 }

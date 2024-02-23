@@ -18,7 +18,7 @@
 <style lang="scss">
 	.root, .wrapper {
 		z-index: 1;
-		width: min(130vh, 1300px);
+		// width: min(130vh, 1300px);
 		// width: min(101.94vh, 1101px);
 		height: 100%;
 
@@ -27,20 +27,20 @@
 		display: flex;
 		align-items: center;
 		justify-content: flex-end;
-
-		margin-left: min(-12vh, -108px);
+		padding-left: 250px;
+		// margin-left: min(-12vh, -108px);
 	}
 
-	.bg {
-		width: 100%;
-		height: 100%;
+	// .bg {
+	// 	width: 100%;
+	// 	height: 100%;
 
-		position: absolute;
-		z-index: -2;
-		background: url('../assets/final2.svg');
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
+	// 	position: absolute;
+	// 	z-index: -2;
+	// 	background: url('../assets/final2.svg');
+	// 	background-repeat: no-repeat;
+	// 	background-size: cover;
+	// }
 
 	.box {
 		display: flex;
