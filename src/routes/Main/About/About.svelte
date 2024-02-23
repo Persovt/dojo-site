@@ -102,7 +102,12 @@
 		}
 
 		& .mark {
-			background: linear-gradient(90deg, rgba(151,71,255,1) 0%, rgba(9,9,121,1) 50%, rgba(151,71,255,1) 100%);
+			background: linear-gradient(
+				90deg,
+				rgba(151, 71, 255, 1) 0%,
+				rgba(9, 9, 121, 1) 50%,
+				rgba(151, 71, 255, 1) 100%
+			);
 			background-clip: text;
 			-webkit-background-clip: text;
 			-webkit-text-fill-color: transparent;
@@ -137,6 +142,7 @@
 			gap: 50px;
 			align-items: center;
 
+			& .text,
 			& .title {
 				text-align: center;
 			}
