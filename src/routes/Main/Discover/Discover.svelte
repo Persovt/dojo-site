@@ -19,22 +19,30 @@
 	</div>
 	<div class="discover">
 		/<span class="discover-text">discover</span>
-		<div class={`hidden-discover ${discoverClassName}`}>discover</div>
 	</div>
-	<a href="#box" class="arrows" on:mouseenter={toggleClassName} on:mouseleave={toggleClassName}>
-		<div class="arrow">
-			<Arrow />
-		</div>
-		<div class="arrow">
-			<Arrow />
-		</div>
-		<div class="arrow">
-			<Arrow />
-		</div>
-	</a>
+
+	<div class="discover__box">
+		<div class={`hidden-discover ${discoverClassName}`}>discover</div>
+
+		<a href="#box" class="arrows" on:mouseenter={toggleClassName} on:mouseleave={toggleClassName}>
+			<div class="arrow">
+				<Arrow />
+			</div>
+			<div class="arrow">
+				<Arrow />
+			</div>
+			<div class="arrow">
+				<Arrow />
+			</div>
+		</a>
+	</div>
 </div>
 
 <style lang="scss">
+	.discover__box {
+		position: relative;
+	}
+
 	.text {
 		font-family: Montserrat;
 		font-style: italic;
@@ -85,40 +93,29 @@
 
 	.hidden-discover {
 		position: absolute;
-		top: 0;
-		left: 0;
-		transform: rotate(270deg) translate(75%, -150%);
+		top: -30px;
+		left: 50px;
+		padding: 0 5px;
 
+		transform: rotate(270deg) translate(75%, -150%);
 		color: #210056;
 		font-family: Inter;
 		font-size: var(--font-size-20);
-		font-style: normal;
 		font-weight: 800;
-		line-height: normal;
 
-		opacity: 0;
+		background: #fff;
+
+		transition: all 2s linear;
 		transition: 0.3s opacity linear;
 
-		padding: 0 3px;
-
-		&:before {
-			opacity: 1;
-			content: 'discover';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: calc(var(--font-size-20) + 4px);
-			background: #fff;
-			transition: all 2s linear;
-		}
+		opacity: 0;
 
 		&:after {
 			content: '';
 			position: absolute;
 			height: 1px;
-			width: 40px;
-			bottom: 0px;
+			width: 50px;
+			bottom: 0;
 			right: 100%;
 			background: #fff;
 		}
@@ -126,11 +123,6 @@
 
 	.hidden-discover-active {
 		opacity: 1;
-
-		/* TODO: эта херня пока не работает*/
-		& .hidden-discover:before {
-			width: 100%;
-		}
 	}
 
 	.arrows {
