@@ -123,8 +123,9 @@
 		}
 
 		.section-digital {
-			background: url('./assets/second-bg-mobile.svg') no-repeat,
-				url('./assets/lines.gif') no-repeat;
+			background: url('./assets/second-bg-mobile.svg') no-repeat;
+			// background: url('./assets/second-bg-mobile.svg') no-repeat,
+			// 	url('./assets/lines.gif') no-repeat;
 
 			background-size: cover, 200% 100%;
 			background-position: center top, -310px -300px;
