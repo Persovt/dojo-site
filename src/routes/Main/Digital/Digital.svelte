@@ -5,7 +5,7 @@
 <div class="root">
 	<div class='wrapper bg'>
 		<div class="box" id="box">
-			<div class="text break-words">dogo digital space</div>
+			<div class="text break-words">dojo digital space</div>
 			<div class="words">
 				{#each words as word}
 					<span class="word">{word}</span>
@@ -18,8 +18,6 @@
 <style lang="scss">
 	.root, .wrapper {
 		z-index: 1;
-		// width: min(130vh, 1300px);
-		// width: min(101.94vh, 1101px);
 		height: 100%;
 
 		position: relative;
@@ -28,19 +26,7 @@
 		align-items: center;
 		justify-content: flex-end;
 		padding-left: 250px;
-		// margin-left: min(-12vh, -108px);
 	}
-
-	// .bg {
-	// 	width: 100%;
-	// 	height: 100%;
-
-	// 	position: absolute;
-	// 	z-index: -2;
-	// 	background: url('../assets/final2.svg');
-	// 	background-repeat: no-repeat;
-	// 	background-size: cover;
-	// }
 
 	.box {
 		display: flex;
@@ -67,7 +53,6 @@
 		-webkit-text-fill-color: transparent;
 
 		&:not(:last-child) {
-			/* TODO: px */
 			margin-right: 18px;
 		}
 	}
@@ -81,7 +66,7 @@
 		font-family: Inter;
 		font-size: var(--font-size-96);
 		font-weight: 800;
-		line-height: 104.167%; /* 100px */
+		line-height: 104.167%;
 		letter-spacing: -0.96px;
 
 		text-transform: uppercase;
@@ -102,7 +87,6 @@
 			width: 100%;
 			justify-content: center;
 			margin-left: 0;
-			// height: 100vw;
 			padding: 0;
 		}
 
@@ -112,7 +96,6 @@
 
 		.bg {
 			transform: rotate(90deg);
-			// height: 100vw;
 			align-items: center;
 		}
 	}
