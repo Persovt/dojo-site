@@ -1,6 +1,7 @@
 <script>
 	import Header from './Header/Header.svelte';
 	import Main from './Main/Main.svelte';
+	import { onMount } from 'svelte';
 </script>
 
 <svelte:head>

@@ -2,14 +2,6 @@
 
 ::-webkit-scrollbar {
 	display: none;
-
-	/* @media (max-width: $mobile-viewport) {
-		display: unset;
-	} */
-}
-
-html {
-	scroll-behavior: smooth;
 }
 
 body {
@@ -29,8 +21,5 @@ body {
 
 * {
 	box-sizing: border-box;
-}
-
-div {
-	/* outline: 1px solid black; */
+	scroll-behavior: smooth;
 }

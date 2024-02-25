@@ -24,7 +24,12 @@
 	<div class="discover__box">
 		<div class={`hidden-discover ${discoverClassName}`}>discover</div>
 
-		<a href="#box" class="arrows" on:mouseenter={toggleClassName} on:mouseleave={toggleClassName}>
+		<a
+			href="#aboutBlock"
+			class="arrows"
+			on:mouseenter={toggleClassName}
+			on:mouseleave={toggleClassName}
+		>
 			<div class="arrow">
 				<Arrow />
 			</div>
@@ -102,11 +107,11 @@
 		font-family: Inter;
 		font-size: var(--font-size-20);
 		font-weight: 800;
+		background: linear-gradient(90deg, white, white);
+		background-position: -200px 0;
+		background-repeat: no-repeat;
 
-		background: #fff;
-
-		transition: all 2s linear;
-		transition: 0.3s opacity linear;
+		transition: all 0.5s linear;
 
 		opacity: 0;
 
@@ -117,33 +122,64 @@
 			width: 50px;
 			bottom: 0;
 			right: 100%;
-			background: #fff;
+			background: linear-gradient(90deg, white, white);
+			background-position: -200px 0;
+			background-repeat: no-repeat;
+			transition: all 0.5s linear;
 		}
 	}
 
 	.hidden-discover-active {
 		opacity: 1;
+
+		&:after {
+			background-position: 0 0;
+		}
+
+		background-position: 0 0;
 	}
 
 	.arrows {
 		display: flex;
-		transition: 0.3s color linear;
+
 		cursor: pointer;
+
+		margin-left: 24px;
+
+		font-size: 72px;
+
 		color: transparent;
+		transition: 1s all ease;
 
-		padding-left: 24px;
-
-		@media (hover: hover) {
-			&:hover {
-				color: #fff;
-
-				& + .discover {
-					opacity: 0;
-				}
+		@for $i from 1 through 3 {
+			& .arrow:nth-child(#{$i}n) {
+				transition-delay: #{(3 - $i) * 0.1}s;
 			}
 		}
 	}
 
+	.arrows:hover {
+		@for $i from 1 through 3 {
+			& .arrow:nth-child(#{$i}n) {
+				// animation-delay: #{$i * 0.1}s;
+				transition-delay: #{$i * 0.1}s;
+			}
+		}
+
+		& .arrow {
+			color: white;
+		}
+	}
+
+	@keyframes arrows-view {
+		from {
+			color: transparent;
+		}
+
+		to {
+			color: white;
+		}
+	}
 	.arrow:not(:last-child) {
 		margin-right: -20px;
 	}

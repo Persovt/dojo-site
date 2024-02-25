@@ -1,4 +1,4 @@
-<div class="root">
+<div class="root" id="aboutBlock">
 	<div class="leftBlock">
 		<div class="title break-words">we are futur ists</div>
 	</div>
