@@ -19,10 +19,6 @@
 				<Discover />
 			</div>
 		</div>
-
-		<div class="section section-digital">
-			<!-- <Digital /> -->
-		</div>
 	</div>
 
 	<About />
@@ -39,7 +35,7 @@
 		grid-template-columns: 1fr 1fr;
 		background: url('./assets/bg-main.svg');
 		background-repeat: no-repeat;
-    	background-size: cover;
+		background-size: cover;
 		background-position: right;
 		padding-right: 220px;
 		margin-right: 600px;
@@ -50,13 +46,6 @@
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-	}
-
-	.section-digital {
-		background: url('./assets/second-bg.svg') no-repeat;
-		background-position: 0 0, -125px 0;
-		background-size: cover, 100% 100%;
-		mix-blend-mode: screen;
 	}
 
 	.changingText {
@@ -82,7 +71,7 @@
 		.changingText {
 			padding: 0;
 		}
-		
+
 		.root {
 			flex-direction: column;
 		}
@@ -94,7 +83,18 @@
 
 		.wrapper {
 			width: 100%;
-			background: linear-gradient(180deg, #fff 25%, #9747ff 55%, #000000 99.9%) no-repeat;
+			background: url('./assets/vector-main-touch.svg'),
+				url('./assets/bg-main-touch.svg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: bottom;
+			background-blend-mode: overlay;
+
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+
+			padding-bottom: 60px;
+			margin-bottom: 200px;
 		}
 
 		.text {
@@ -109,16 +109,6 @@
 			transform: rotate(168deg);
 			left: 2%;
 			top: 54%;
-		}
-
-		.section-digital {
-			background: url('./assets/second-bg-mobile.svg') no-repeat;
-
-			background-size: cover, 200% 100%;
-			background-position: center top, -310px -300px;
-			mix-blend-mode: screen;
-
-			padding: 230px 0 150px;
 		}
 	}
 </style>

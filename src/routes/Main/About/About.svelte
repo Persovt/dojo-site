@@ -157,7 +157,10 @@
 		}
 
 		.leftBlock {
-			background: linear-gradient(270deg, #210056 0%, #ae47ff 100%);
+			background: 
+				url('./assets/vector-second-touch.svg'),
+				linear-gradient(270deg, #210056 0%, #ae47ff 100%);
+			background-size: contain;
 			border-radius: 5vw;
 			padding-top: 6vw;
 
