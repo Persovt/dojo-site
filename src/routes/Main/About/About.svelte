@@ -47,7 +47,11 @@
 	.leftBlock {
 		height: 100%;
 		border-radius: 37px;
-		background: linear-gradient(180deg, #210056 0%, #ae47ff 100%);
+		background: url('./assets/Vector.svg'),
+		linear-gradient(180deg, #210056 0%, #ae47ff 100%);
+		background-blend-mode: overlay;
+		background-repeat: no-repeat;
+    background-size: cover;
 
 		display: flex;
 		flex-direction: column;

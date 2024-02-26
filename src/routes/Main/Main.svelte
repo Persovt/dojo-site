@@ -21,7 +21,7 @@
 		</div>
 
 		<div class="section section-digital">
-			<Digital />
+			<!-- <Digital /> -->
 		</div>
 	</div>
 
@@ -37,7 +37,12 @@
 		display: grid;
 		grid-template-rows: 1fr;
 		grid-template-columns: 1fr 1fr;
-		background: linear-gradient(90deg, #fff 25%, #9747ff 55%, #000000 99.9%) no-repeat;
+		background: url('./assets/bg-main.svg');
+		background-repeat: no-repeat;
+    	background-size: cover;
+		background-position: right;
+		padding-right: 220px;
+		margin-right: 600px;
 	}
 
 	.section-main {
