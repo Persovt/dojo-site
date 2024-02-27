@@ -38,7 +38,6 @@
 		background-size: cover;
 		background-position: right;
 		padding-right: 220px;
-		margin-right: 600px;
 	}
 
 	.section-main {
@@ -94,7 +93,6 @@
 			grid-template-rows: 1fr;
 
 			padding-bottom: 60px;
-			margin-bottom: 200px;
 		}
 
 		.text {

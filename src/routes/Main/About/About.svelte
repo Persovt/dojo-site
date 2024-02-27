@@ -33,7 +33,7 @@
 
 <style lang="scss">
 	.root {
-		padding: min(72px, 6.6vh) min(130px, 12.037vh) min(66px, 6.1vh) min(58px, 5.37vh);
+		padding: min(72px, 6.6vh) 308px;
 
 		height: 100%;
 		position: relative;
@@ -139,6 +139,7 @@
 			gap: var(--gap);
 
 			padding-bottom: 80px;
+			padding-top: 80px;
 		}
 
 		.rightBlock {
