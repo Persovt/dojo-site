@@ -4,8 +4,6 @@
 	const second = 'under construction';
 </script>
 
-<div id='main'></div>
-
 <header>
 	<div class="kostil" />
 	<div class="text">
@@ -16,7 +14,7 @@
 			{second}
 		</div>
 	</div>
-	<a class="logo" href='#main'>
+	<a class="logo" href="#main">
 		<Logo />
 		<span>
 			DOJO <br />
@@ -41,8 +39,6 @@
 		position: sticky;
 		left: 0;
 		background: #fff;
-
-		margin-right: 290px;
 	}
 
 	a {

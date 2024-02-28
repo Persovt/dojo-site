@@ -2,7 +2,6 @@
 	import ChangingText from './ChangingText.svelte';
 	import StaticText from './StaticText.svelte';
 	import Discover from './Discover/Discover.svelte';
-	import Digital from './Digital/Digital.svelte';
 	import About from './About/About.svelte';
 </script>
 
@@ -27,6 +26,7 @@
 <style lang="scss">
 	.root {
 		display: flex;
+		margin-left: 290px;
 	}
 
 	.wrapper {
@@ -101,12 +101,6 @@
 
 		.discover {
 			justify-content: start;
-		}
-
-		.middleBlock {
-			transform: rotate(168deg);
-			left: 2%;
-			top: 54%;
 		}
 	}
 </style>

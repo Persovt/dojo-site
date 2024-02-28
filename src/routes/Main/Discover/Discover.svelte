@@ -1,5 +1,8 @@
-<script>
+<script lang="ts">
+	import { onMount } from 'svelte';
 	import Arrow from './assets/Arrow.svelte';
+	import animateScrollTo from 'animated-scroll-to';
+	import { backOut } from 'svelte/easing';
 
 	let discoverClassName = '';
 
@@ -10,6 +13,15 @@
 			discoverClassName = 'hidden-discover-active';
 		}
 	}
+
+	let element: Element | null;
+	onMount(() => {
+		element = document.getElementById('aboutBlock');
+	});
+
+	const onClickHandler = () => {
+		if (element) animateScrollTo(element, { maxDuration: 1000, easing: backOut });
+	};
 </script>
 
 <div class="root">
@@ -25,10 +37,11 @@
 		<div class={`hidden-discover ${discoverClassName}`}>discover</div>
 
 		<a
-			href="#aboutBlock"
 			class="arrows"
+			on:click={onClickHandler}
 			on:mouseenter={toggleClassName}
 			on:mouseleave={toggleClassName}
+			href="#aboutBlock"
 		>
 			<div class="arrow">
 				<Arrow />

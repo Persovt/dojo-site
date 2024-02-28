@@ -26,14 +26,11 @@
 	}
 
 	main {
-		overflow: scroll;
 		height: 100%;
 		display: flex;
 
 		@media (max-width: $mobile-viewport) {
 			max-height: 100%;
-			overflow-x: hidden;
-			overflow-y: scroll;
 
 			flex-direction: column;
 		}
