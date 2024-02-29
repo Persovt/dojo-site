@@ -6,7 +6,7 @@
 </script>
 
 <div class="root">
-	<div class="wrapper">
+	<div class="wrapper" >
 		<div class="section section-main">
 			<div class="changingText">
 				<div class="text">

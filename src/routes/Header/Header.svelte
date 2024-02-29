@@ -4,6 +4,8 @@
 	const second = 'under construction';
 </script>
 
+<div id='main'></div>
+
 <header>
 	<div class="kostil" />
 	<div class="text">

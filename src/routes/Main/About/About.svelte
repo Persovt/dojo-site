@@ -1,8 +1,3 @@
-<script>
-	  import { scrollRef } from 'svelte-scrolling'
-</script>
-
-
 <div class="root" id="aboutBlock">
 	<div class="leftBlock">
 		<div class="title break-words">we are futur ists</div>
