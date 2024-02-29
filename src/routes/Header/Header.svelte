@@ -16,7 +16,7 @@
 			{second}
 		</div>
 	</div>
-	<a class="logo" href='#main'>
+	<a class="logo" href="#main">
 		<Logo />
 		<span>
 			DOJO <br />
@@ -41,8 +41,6 @@
 		position: sticky;
 		left: 0;
 		background: #fff;
-
-		margin-right: 290px;
 	}
 
 	a {

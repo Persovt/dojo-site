@@ -34,6 +34,7 @@
 	"dependencies": {
 		"@fontsource/inter": "^5.0.16",
 		"@fontsource/montserrat": "^5.0.16",
-		"@sveltejs/vite-plugin-svelte": "^3.0.2"
+		"@sveltejs/vite-plugin-svelte": "^3.0.2",
+		"animated-scroll-to": "^2.3.0"
 	}
 }
