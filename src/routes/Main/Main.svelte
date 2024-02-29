@@ -73,6 +73,7 @@
 
 		.root {
 			flex-direction: column;
+			margin: 0;
 		}
 
 		.wrapper {
